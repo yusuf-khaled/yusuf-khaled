@@ -187,8 +187,9 @@ export default function Work(props) {
                       </div>
                       <div className={classes.imageContainer}>
                         <img
-                          href="../resources/headshot.jpg"
+                          href="%PUBLIC_URL%/headshot.jpg"
                           alt="conclave editor"
+                          className={classes.image}
                         />
                       </div>
                     </div>
