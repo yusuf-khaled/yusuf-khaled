@@ -11,8 +11,6 @@ import { ThemeProvider } from "@material-ui/styles";
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
-// green "#09d3ac" black "#282c34",
-
 const useStyles = makeStyles(() =>
   createStyles({
     toolBar: {
@@ -32,11 +30,9 @@ const useStyles = makeStyles(() =>
       marginLeft: 8
     },
     font: {
-      //fontFamily: 'source-code-pro, Menlo, Monaco, Consolas, "Courier New"',
       color: "white"
     },
     linkText: {
-      //fontFamily: 'source-code-pro, Menlo, Monaco, Consolas, "Courier New"',
       fontWeight: 600,
       color: "white",
       padding: 0,
@@ -51,7 +47,7 @@ const useStyles = makeStyles(() =>
       "background-position": "0 0",
       "&:hover": {
         "text-decoration": "none",
-        backgroundColor: "rgba(0, 255, 0, 0.35)", //"#09d3ac",
+        backgroundColor: "rgba(0, 255, 0, 0.35)",
         borderBottom: "10px rgba(0, 255, 0, 0.35)"
       }
     }

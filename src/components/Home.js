@@ -25,6 +25,7 @@ theme = responsiveFontSizes(theme);
 const useStyles = makeStyles(() =>
   createStyles({
     container: {
+      height: "100%",
       paddingLeft: 30,
       paddingRight: 30
     },
@@ -52,7 +53,7 @@ const useStyles = makeStyles(() =>
       "background-position": "0 0",
       "&:hover": {
         "text-decoration": "none",
-        backgroundColor: "rgba(0, 255, 0, 0.35)", //"#09d3ac",
+        backgroundColor: "rgba(0, 255, 0, 0.35)",
         borderBottom: "10px rgba(0, 255, 0, 0.35)"
       }
     },
@@ -79,10 +80,6 @@ export default function Home() {
 
   function scrollToAbout() {
     scroller.scrollTo("about-me", { smooth: true });
-  }
-
-  function scrollToWork() {
-    scroller.scrollTo("work", { smooth: true });
   }
 
   return (
@@ -183,6 +180,11 @@ export default function Home() {
               aria-label="See projects and experience"
               onClick={scrollToAbout}
               className="arrow center move"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                flexGrow: 1
+              }}
             >
               <DownArrow fontSize="large" />
             </IconButton>
@@ -191,11 +193,10 @@ export default function Home() {
         </ScrollElement>
       </ThemeProvider>
       <ScrollElement name="about-me">
-        <AboutMe onScrollUp={scrollToTop} onScrollDown={scrollToWork} />
+        <AboutMe onScrollUp={scrollToTop} />
       </ScrollElement>
       <ScrollElement name="work">
         <Work onScrollUp={scrollToAbout} />
-        <hr style={{ border: "1px dashed white" }} />
       </ScrollElement>
     </>
   );
