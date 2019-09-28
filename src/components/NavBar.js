@@ -65,7 +65,7 @@ export default function NavBar() {
           <div className={classes.textContainer}>
             <Typography variant="h5" color="inherit" className={classes.font}>
               <Link
-                href="https://caravanapp.ca"
+                href="https://storage.googleapis.com/yusufkhaled-personalsite-resources/images/resume_old.pdf"
                 target={"_blank"}
                 className={classes.linkText}
               >
@@ -76,7 +76,7 @@ export default function NavBar() {
           <div className={classes.textContainer}>
             <Typography variant="h5" color="inherit" className={classes.font}>
               <Link
-                href="https://caravanapp.ca"
+                href="https://medium.com/@yhbk12"
                 target={"_blank"}
                 className={classes.linkText}
               >

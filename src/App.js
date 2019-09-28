@@ -5,7 +5,7 @@ import "./styles/App.css";
 
 function App() {
   return (
-    <div className="test">
+    <div className="site">
       <NavBar />
       <Home />
     </div>

@@ -69,7 +69,7 @@ const useStyles = makeStyles(() =>
   })
 );
 
-export default function Home() {
+export default function Home(props) {
   const classes = useStyles();
 
   const screenSmallerThanSm = useMediaQuery(theme.breakpoints.down("xs"));
@@ -180,11 +180,6 @@ export default function Home() {
               aria-label="See projects and experience"
               onClick={scrollToAbout}
               className="arrow center move"
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                flexGrow: 1
-              }}
             >
               <DownArrow fontSize="large" />
             </IconButton>
@@ -194,8 +189,6 @@ export default function Home() {
       </ThemeProvider>
       <ScrollElement name="about-me">
         <AboutMe onScrollUp={scrollToTop} />
-      </ScrollElement>
-      <ScrollElement name="work">
         <Work onScrollUp={scrollToAbout} />
       </ScrollElement>
     </>

@@ -16,6 +16,7 @@ import {
 } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import UpArrow from "@material-ui/icons/KeyboardArrowUp";
+import "../styles/Home.css";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -26,10 +27,6 @@ const useStyles = makeStyles(() =>
       paddingTop: 30,
       paddingLeft: 30,
       paddingBottom: 30
-    },
-    arrowContainer: {
-      display: "flex",
-      justifyContent: "center"
     },
     arrow: {
       color: "white"
@@ -140,16 +137,15 @@ export default function AboutMe(props) {
   return (
     <ThemeProvider theme={theme}>
       <Container className={classes.container} maxWidth="lg">
-        <div className={classes.arrowContainer}>
-          <IconButton
-            edge="start"
-            color="inherit"
-            aria-label="Scroll to top"
-            onClick={onScrollUp}
-          >
-            <UpArrow fontSize="large" className={classes.arrow} />
-          </IconButton>
-        </div>
+        <IconButton
+          edge="start"
+          color="inherit"
+          aria-label="Scroll to top"
+          onClick={onScrollUp}
+          className="arrow centerDownArrow"
+        >
+          <UpArrow fontSize="large" />
+        </IconButton>
         <Typography
           variant={screenSmallerThanSm ? "h5" : "h3"}
           color="inherit"

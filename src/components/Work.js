@@ -137,7 +137,7 @@ export default function Work(props) {
   const work = [
     {
       company: "Caravan",
-      position: "Co-founder & Developer",
+      position: "Co-founder & Full-stack Developer",
       location: "Waterloo, ON",
       date: "June 2019 - Present",
       description: (
@@ -332,7 +332,8 @@ export default function Work(props) {
           alt="Sun Life logo"
           title="sun-life-logo"
           id="ls_embed_1517015381"
-          src="https://storage.googleapis.com/yusufkhaled-personalsite-resources/images/sunlife.jpg"
+          //src="https://storage.googleapis.com/yusufkhaled-personalsite-resources/images/sunlife.jpg"
+          src="https://storage.googleapis.com/yusufkhaled-personalsite-resources/images/sunlife.png"
           scrolling="no"
           allowFullScreen
           className={classes.image}
