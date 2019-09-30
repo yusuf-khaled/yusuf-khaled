@@ -10,16 +10,17 @@
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.1.1",
     "react-scripts": "3.1.2",
-    "react-scroll": "^1.7.14"
+    "react-scroll": "^1.7.14",
+    "serve": "^11.2.0"
   },
   "homepage": "https://yusuf-khaled.github.io/site",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
