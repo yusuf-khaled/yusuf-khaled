@@ -16,6 +16,7 @@ import { ThemeProvider } from "@material-ui/styles";
 import DownArrow from "@material-ui/icons/KeyboardArrowDown";
 import { Element as ScrollElement, scroller } from "react-scroll";
 import "../styles/Home.css";
+import NavBar from "./NavBar";
 import AboutMe from "./AboutMe";
 import Work from "./Work";
 
@@ -84,6 +85,7 @@ export default function Home(props) {
 
   return (
     <>
+      <NavBar />
       <ThemeProvider theme={theme}>
         <ScrollElement name="top">
           <Container

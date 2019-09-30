@@ -1,13 +1,16 @@
 import React from "react";
-import NavBar from "./components/NavBar";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./components/Home";
 import "./styles/App.css";
 
 function App() {
   return (
     <div className="site">
-      <NavBar />
-      <Home />
+      <Route
+        exact
+        path={`/`}
+        render={routerProps => <Home routerProps={routerProps} />}
+      />
     </div>
   );
 }
