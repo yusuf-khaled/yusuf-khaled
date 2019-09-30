@@ -1,2 +1,2 @@
 # **Personal website.**
-Built using React and Material UI.
+Built using React JS and Material UI.
