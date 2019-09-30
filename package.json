@@ -13,7 +13,7 @@
     "react-scroll": "^1.7.14",
     "serve": "^11.2.0"
   },
-  "homepage": "https://yusuf-khaled.github.io/site",
+  "homepage": "https://yusufkhaled-personalsite.herokuapp.com/",
   "scripts": {
     "dev": "react-scripts start",
     "start": "serve -s build",
