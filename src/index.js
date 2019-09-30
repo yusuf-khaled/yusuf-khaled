@@ -4,10 +4,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-const express = require("express");
-const app = express();
-
-app.use(express.static(__dirname + "/static", { dotfiles: "allow" }));
 
 //ReactDOM.render(<App />, document.getElementById("root"));
 ReactDOM.render(
