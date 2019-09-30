@@ -12,7 +12,7 @@
     "react-scripts": "3.1.2",
     "react-scroll": "^1.7.14"
   },
-  "homepage": "https://yusuf-khaled.github.io/yusuf-khaled",
+  "homepage": "https://yusuf-khaled.github.io/site",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
