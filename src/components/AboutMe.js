@@ -91,19 +91,19 @@ const useStyles = makeStyles(() =>
 const techStack = [
   {
     name: "Backend",
-    description: "Java, Node.js, Express, Python, Git"
+    description: "Node, Python, Express, Java, RESTful APIs"
   },
   {
     name: "Frontend",
-    description: "React, HTML, CSS, React Native"
+    description: "Javascript, React, HTML, CSS"
   },
   {
     name: "Database",
-    description: "MongoDB, Postgres, Firebase, MySQL"
+    description: "MongoDB, PostgreSQL, Firebase, MySQL"
   },
   {
-    name: "DevOps",
-    description: "Airflow, Docker, Google Cloud,  AWS"
+    name: "Other",
+    description: "Git, Airflow, Docker, Google Cloud"
   }
 ];
 
