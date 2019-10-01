@@ -95,7 +95,7 @@ const techStack = [
   },
   {
     name: "Frontend",
-    description: "Javascript, React, HTML, CSS"
+    description: "Javascript, Typescript, React, HTML, CSS"
   },
   {
     name: "Database",
