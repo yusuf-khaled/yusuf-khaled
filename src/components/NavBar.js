@@ -65,7 +65,7 @@ export default function NavBar() {
           <div className={classes.textContainer}>
             <Typography variant="h5" color="inherit" className={classes.font}>
               <Link
-                href="https://storage.googleapis.com/yusufkhaled-personalsite-resources/images/resume_old.pdf"
+                href="https://storage.googleapis.com/yusufkhaled-personalsite-resources/documents/resume.pdf"
                 target={"_blank"}
                 className={classes.linkText}
               >
